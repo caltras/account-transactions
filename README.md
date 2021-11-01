@@ -17,17 +17,17 @@ On folder api, run the same command in order to install the expressjs dependenci
 
 ## Running
 
-1. Run mongodb container. A script is available on folder `scripts`
+1. Run mongodb container. A script is available on root folder.
     
     1.1  `sh run-mongodb.sh`
 
 2. Load the mongo db with the data. For this project was used the large data, 10k accounts and 94k transactions.
 
-    2.2 To use the large db, on `scripts` folder, run the command `node load-into-mongodb.js large`, it will take few seconds to load.
+    2.2 To use the large db, run the command `node load-into-mongodb.js large`, it will take few seconds to load.
 
     2.3 If you want to use the small datasource, just remove the `large` parameter. `node load-into-mongodb.js`
 
-3. On root folder, run the command `npm start` to run the API
+3. Run the command `npm start` to run the API
 
 4. For running the tests and check the coverage, run the command `npm test`
     4.1 The report are available on `coverage` folder
